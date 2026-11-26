@@ -1,0 +1,8 @@
+{
+  "versionCode": 22,
+  "versionName": "2.11",
+  "minVersionCode": 22,
+  "apkUrl": "./sehir-fethetme-oyunu.apk",
+  "releaseNotes": "Kıstak/koridor zorunlu çizgi ilerlemesi izin kuralı eklendi. Haritada ve devletler listesinde asker gizleme güncellendi.",
+  "updatedAt": "2026-11-25"
+}

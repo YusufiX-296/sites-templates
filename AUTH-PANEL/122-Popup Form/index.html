@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Login Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">CODE<span>ZONE.</span></div>
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Course</li>
+                    <li>Gallery</li>
+                    <li id="login">
+                        Login <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="login_form">
+        <button id="btn_close">&times;</button>
+
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Please login to your account</p>
+
+        <form id="myForm">
+            <div class="field">
+                <label>User Email</label>
+                <div class="input_box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your email" required>
+                </div>
+            </div>
+            <div class="field">
+                <label >User Password</label>
+                <div class="input_box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your password" required>
+                </div>
+            </div>
+
+            <div class="options">
+                <label> <input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login_btn">
+                Login Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="register">
+                Don't have an account?
+                <a href="#">Sign Up</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

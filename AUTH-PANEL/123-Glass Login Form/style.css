@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('https://nasemul1.github.io/img_host/peakpx.jpg') center center / cover no-repeat;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.glass-card{
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:  0 25px  50px rgba(0, 0, 0, 0.75), inset 0 1px 2px rgba(255, 255, 255, 0.25);
+    padding: 42px 34px 36px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.glass-card h2{
+    font-size: 1.85rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 34px;
+    letter-spacing: 0.4px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.field-group{
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.field-group input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1.2px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 0 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.25s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.field-group label{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.92rem;
+    pointer-events: none;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.field-group input:focus~label,
+.field-group input:valid~label{
+    top: -14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.field-group input:focus{
+    border-bottom-color: #fff;
+}
+
+.options-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -6px 0 26px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.remember-wrap{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.remember-wrap input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1.2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-wrap input[type="checkbox"]:checked{
+    background: #fff;
+    background-color: #fff;
+}
+
+.remember-wrap input[type="checkbox"]:checked::after{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 1.8px 1.8px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.forgot-link{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-btn{
+    width: 100%;
+    height: 46px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+    transition: all 0.2s ease;
+}
+
+.login-btn:hover{
+    background: rgba(255, 255, 255, 0.92);
+    transform: translateY(-1.5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+}
+
+.login-btn:active{
+    transform: translateY(1px);
+}
+
+.register-text{
+    text-align: center;
+    margin-top: 22px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.register-text a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+
+}
+
+.register-text a:hover{
+    text-decoration: underline;
+}
+
